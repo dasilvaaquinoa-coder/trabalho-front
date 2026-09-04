@@ -1,5 +1,6 @@
-*{
-    padding: 0 ;
+*{    
+    margin:0%;
+    padding:0%;
     box-sizing: border-box;
 }
 
@@ -8,16 +9,16 @@
  --primary-color: #211b80;
   --primary-hover: #5751b6;
   --text-dark:#1f2e55;
-  --text-lignt:#7280a7;
+  --text-light:#7280a7;
   --bg-main:#a2a2a5;
-  --font-family:#181717;
+  --font-family:red;
 }
 
 body{
     font-family:var(--font-family);
     background-color:var(--bg-main);
     color:aqua;
-    min-height: 100%;
+    min-height: 100vh;
 }
 
 img{
