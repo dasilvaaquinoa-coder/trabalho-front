@@ -21,9 +21,42 @@ body{
     min-height: 100vh;
 }
 
+
+h1 {
+  color: rgb(13, 89, 124);
+  text-align: center;
+}
+
+p {
+  font-family:Verdana, Geneva, Tahoma, sans-serif verdana;
+  font-size: 20px;
+}
 img{
 
      max-width:50%;
      height:auto;
      display: block;
+}
+.card{
+    background-image:url("./images/pattern-background-desktop.svg");
+    background-image:url("./images/pattern-background-mobile.svg");
+    
+
+
+}
+.btn-group {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.button{
+    background-color: #7280a7;
+    border:none; 
+    color:rgb(46, 23, 146);
+    padding:50px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 17px;
+    cursor:pointer;
+
 }
