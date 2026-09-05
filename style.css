@@ -22,12 +22,12 @@ body{
 }
 
 
-h1 {
+h1{
   color: rgb(13, 89, 124);
   text-align: center;
 }
 
-p {
+p{
   font-family:Verdana, Geneva, Tahoma, sans-serif verdana;
   font-size: 20px;
 }
@@ -50,7 +50,7 @@ img{
     overflow:hidden;
     box-shadow:0 10px 20px rgb(13, 89, 124);
 }
-.btn-group {
+.btn-group{
   display: flex;
   flex-wrap: wrap;
 }
