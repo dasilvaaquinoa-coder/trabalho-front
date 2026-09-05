@@ -1,7 +1,7 @@
 *{    
     margin:0%;
     padding:0%;
-    box-sizing: border-box;
+    box-sizing:border-box;
 }
 
 :root{
@@ -10,8 +10,8 @@
   --primary-hover: #5751b6;
   --text-dark:#1f2e55;
   --text-light:#7280a7;
-  --bg-main:#a2a2a5;
-  --font-family:red;
+  --bg-main:#c0dae9;
+  --font-family:rgb(172, 183, 204);
 }
 
 body{
@@ -32,37 +32,32 @@ p{
   font-size: 20px;
 }
 img{
-
-     max-width:50%;
+     max-width:20%;
      height:auto;
      display: block;
 }
 .card{
-    background-image:url("./images/pattern-background-desktop.svg");
-    background-image:url("./images/pattern-background-mobile.svg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-
+    background-color:#ffff;
     width:80%;
-    max-width:500px;
+    max-width:400px;
     border-radius:20px;
     overflow:hidden;
-    box-shadow:0 10px 20px rgb(13, 89, 124);
-}
-.btn-group{
-  display: flex;
-  flex-wrap: wrap;
-}
+} 
 
+.card-body{
+  padding: 24px 20px;
+  text-align:center;
+
+}
+.hero-img{
+  width:80%;
+  height:auto;
+  display:center;
+}
 .button{
-    background-color: #7280a7;
-    border:none; 
-    color:rgb(46, 23, 146);
-    padding:50px;
-    text-decoration: none;
-    text-align: center;
-    font-size: 17px;
-    cursor:pointer;
+    width:100%;
+    border-radius:10px;
+    padding:20px;
+    
 
 }
