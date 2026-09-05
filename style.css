@@ -40,9 +40,15 @@ img{
 .card{
     background-image:url("./images/pattern-background-desktop.svg");
     background-image:url("./images/pattern-background-mobile.svg");
-    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 
-
+    width:80%;
+    max-width:500px;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 10px 20px rgb(13, 89, 124);
 }
 .btn-group {
   display: flex;
