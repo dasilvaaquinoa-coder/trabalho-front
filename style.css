@@ -34,37 +34,43 @@ p{
 }
 
 .card .img-box img{    
-  width:100%;
+  width:100%; 
   height:100%;
-  object-fit:cover;
+  object-fit:cover;/* garante que a imagem preencha todo o espaco disponivel sem ser esticada ou distorcida(
+  ela corta os excessos mantendo a proporcao original).*/
 }
 .card{
     display: flex;
-    justify-content:center;
+    justify-content:center; /* centraliza os elementos filhos horizontalmente dentro do card. */
     width: 350px;
     height: 300px;
-    position:static;
-    background-color:blue;
-    border: radius 20px;
-    box-shadow:0px 35px 80px rgba(0,0,0.15);
+    position:relative; /* manteve o posicionamento padrao do elemento no fluxo da pagina*/
+    background-color:#ffffff;/* define a cor de fundo do card */
+    border-radius: 20px; /* e usada para arrendondar os cantos da borda de um elemento. */
+    box-shadow:0px 35px 80px rgba(0,0,0.15);/* adiciona uma borda suave abaixo do card.*/
     transition:0.5s;
 }
 .card-hover{
-  height:400px;
+  height:400px;/* define a nova altura.*/
 }
 
 .card.content{
-  display:flex;
-  flex-direction:column;
-  gap: 18px;
-  position:absolute;
-  top: 250px;
-  width:100%;
-  padding:0px 30px;
-  text-align:center;
-  height:30px;
-  overflow:hidden;
-  transition:0.5s;
+  display:flex;/* permitindo organizar e alinhar facilmente os elementos filhos dentro deste conteiner. */
+  flex-direction:column;/*define a direcao dos elementos filhos empilhados em coluna(um debaixo do outro),
+  em vez de lado a lado */
+  gap: 18px;/* define o espacamento constante entre cada elemento filho do container.*/
+  position:absolute;/* remover o elemento do fluxo normal da pagina e o posiciona em relacao ao ancestral
+  mais proximo que tenha.*/
+  top: 250px; /* empurra o elemento para baixo, a partir do topo do seu elemento pai de referencia. */
+  width:100%; /* faz o conteiner ocupar 100% da largura disponivel do seu elemento pai. */
+  padding:0px 30px;/*define o espacamento interno do elemento. */
+  text-align:center;/* centraliza todo o texto e elementos inline contidos dentro dessa caixa.*/
+  height:30px;/* trava a altura do container em exatamente(geralmente usado para esconder o conteudo restante
+  quando combinado  a propriedade abaixo.*/
+  overflow:hidden; /* esconde qualquer conteudo que ultrapasse o limite de alutra do conteiner(cort o que
+  "vazar" */
+  transition:0.5s;/* cria uma animacao suave de segundos quando alguma propriedade desse elemento mudar (
+  ex: se a altura expandir de 30px para outro valor no :hover).*/
 
 }
 .card:hover.card.content{
@@ -79,6 +85,21 @@ p{
   border-radius:8px;
 }
 
+.plan-detail{
+  display:flex;
+  flex-direction:column;/*colocar o preco abaixo do titulo*/
+  gap:4px; /*espaco entre o titulo eo preco*/
+}
+
+.plan-tittle{
+  color:hsl(224, 23% 55%);/*cor escura padrao de card */
+  font-size: 1rem;
+}
+
+.plan-price{
+  color:hsl(224, 23% 55%);/* cor cinza/suave para preco.*/
+  font-size:0.9rem;
+}
 button{
   padding:17px 40px;
   border-radius:50px;
