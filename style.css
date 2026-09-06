@@ -1,36 +1,39 @@
-*{    
-    margin:0%;
-    padding:0%;
-    box-sizing:border-box;
+*{    /* (*) seleciona absolutamente todos os elementos html da pagina .*/
+    margin:0%; /* remove as margens externas padrao de todos os elementos. */
+    padding:0%; /* remove todo o espacamento interno padrao dos elementos (como o recuo interno padrao 
+    de listas ou botoes).*/
+    box-sizing:border-box; /*garantiindo que o elemento nao quebre o layout crescendo alem do tamanho
+    especificado. */
 }
 
 body{
     display:flex;
     justify-content:center;
-    align-items:center;
+    align-items:center; /*centraliza os elementos filhos verticalmente na tela. */
     min-height:100vh;  
-    background:linear-gradient(90deg,#211b80,#211b80,#ffff);
+    background:linear-gradient(90deg,#211b80,#211b80,#ffff); /* cria um fundo com degrade na direcao
+    de 90 graus (da esquerda para a direita), transicionando de cor). */
 
 }
 h1{
-  color: rgb(13, 89, 124);
-  text-align: center;
+  color: rgb(13, 89, 124);/* define a cor do texto para um tom . */
+  text-align: center; /* centraliza o texto do titulo. */
 }
 
 p{
-  font-family:Verdana, Geneva, Tahoma, sans-serif verdana;
-  font-size: 20px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;/* define a familia de fontes para o texto */
+  font-size: 20px;/*define o tamanho da fonte dos parafrafos. */
 }
 .card .img-box{
     position:absolute;
     width:250px;
      height:auto;
-     top:0px;  
+     top:0px;  /* posiciona a caixa colada no topo do conteiner pai*/
      transition:0.5s; 
 }
 .card:hover .img-box{
   top: -100px;
-  scale:0.75;
+  scale:0.75; /* reduz a escala da imagem para 75% do seu tamanho original (fica levemente menor).*/
 }
 
 .card .img-box img{    
