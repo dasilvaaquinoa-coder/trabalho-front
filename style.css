@@ -105,22 +105,23 @@ p{
 }
 button{
   padding:17px 40px;
-  border-radius:50px;
-  cursor:pointer;
-  border:0;
+  border-radius:50px; /* arredonda as pontas do botao ate criar o formato totalmente oval/pilula.*/
+  cursor:pointer;  /*transforma o ponteiro do mause no icone " maozinha de clique" ao passar por cima do botao. */
+  border:0;/* remove a borda padrao do navegador em volta do botao. */
   background-color:blue;
-  box-shadow:rgb(13, 89, 124) 0 0 8px;
-  letter-spacing: 1.5px;
-  text-transform:uppercase;
-  font-size:15px;
+  box-shadow:rgb(13, 89, 124) 0 0 8px;/* adiciona um leve brilho /sombra ao redor do botao usando a cor. */
+  letter-spacing: 1.5px; /* adiciona um espaco entre cada letra do texto.*/
+  text-transform:uppercase; /*converte todo o texto do botao para letras maiusculas. */
+  font-size:15px; /* define o tamanho da fonte. */
   transition: all 0.5s ease;
 }
 
 button:hover{
- letter-spacing: 3px;
+ letter-spacing: 3px; /* aumenta o espaço entre as letras ( efeito de "expansao" do texto). */
  background-color:hsl(261deg 80% 48%);
- color:hsl(0,0%,100%);
- box-shadow: rgb(93 24 220) 0px 7px 29px 0px;
+ color:hsl(0,0%,100%); /* muda a cor do texto  para branco puro. */
+ box-shadow: rgb(93 24 220) 0px 7px 29px 0px; /* cria uma sombra projetada para baixo com tom arroxeado,
+ dando um efeito de elevaçao no botao . */
 
 }
 
@@ -128,8 +129,11 @@ button:active{
    letter-spacing: 3px;
    background-color:hsl(261deg 80% 48%);
    color:hsl(0,0%,100%);
-   box-shadow:rgb(93 24 220) 0px 0px 0px 0px;
-   transform: translateY(10px);
-   transition:100ms;
+   box-shadow:rgb(93 24 220) 0px 0px 0px 0px; /* remove totalmente a sombra, dando a impressao de que
+   o botao "desceu" em direçao a tela. */
+   transform: translateY(10px);/*  empurra o botao 10px para baixo na tela, simulaçao fisica de botao sendo
+    afundado/ pressionando.*/
+   transition:100ms;/* aplica essa animaçao de clique em um ritmo ultra rapido para dar resposta imediata
+   ao toque. */
 
 }
