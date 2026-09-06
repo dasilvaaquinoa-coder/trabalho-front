@@ -8,12 +8,10 @@ body{
     display:flex;
     justify-content:center;
     align-items:center;
-    min-height:100vh;
+    min-height:100vh;  
     background:linear-gradient(90deg,#211b80,#211b80,#ffff);
 
 }
-
-
 h1{
   color: rgb(13, 89, 124);
   text-align: center;
@@ -73,18 +71,41 @@ p{
   top:130px;
   height:250px;
 }
-  .button{
-    width:100%;
-    border-radius:10px;
-    padding:20px;
-}
-
 .card.read-more{
   background: linear-gradient(90deg,#211b80,#211b80);
   padding:12px;
   color:#ffffff;
   text-decoration:none;
   border-radius:8px;
-  
 }
 
+button{
+  padding:17px 40px;
+  border-radius:50px;
+  cursor:pointer;
+  border:0;
+  background-color:blue;
+  box-shadow:rgb(13, 89, 124) 0 0 8px;
+  letter-spacing: 1.5px;
+  text-transform:uppercase;
+  font-size:15px;
+  transition: all 0.5s ease;
+}
+
+button:hover{
+ letter-spacing: 3px;
+ background-color:hsl(261deg 80% 48%);
+ color:hsl(0,0%,100%);
+ box-shadow: rgb(93 24 220) 0px 7px 29px 0px;
+
+}
+
+button:active{
+   letter-spacing: 3px;
+   background-color:hsl(261deg 80% 48%);
+   color:hsl(0,0%,100%);
+   box-shadow:rgb(93 24 220) 0px 0px 0px 0px;
+   transform: translateY(10px);
+   transition:100ms;
+
+}
