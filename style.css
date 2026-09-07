@@ -15,13 +15,14 @@ body{
     de 90 graus (da esquerda para a direita), transicionando de cor). */
 
 }
-h1{
+.car h1{
   color: rgb(13, 89, 124);/* define a cor do texto para um tom . */
   text-align: center; /* centraliza o texto do titulo. */
+  font-size: 1.2rem;
 }
 
-p{
-  font-family:Verdana, Geneva, Tahoma, sans-serif;/* define a familia de fontes para o texto */
+.card p{
+  color:#211b80;
   font-size: 20px;/*define o tamanho da fonte dos parafrafos. */
 }
 .card .img-box{
@@ -103,6 +104,7 @@ p{
   color:hsl(224, 23% 55%);/* cor cinza/suave para preco.*/
   font-size:0.9rem;
 }
+
 button{
   padding:17px 40px;
   border-radius:50px; /* arredonda as pontas do botao ate criar o formato totalmente oval/pilula.*/
