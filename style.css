@@ -15,7 +15,7 @@ body{
     de 90 graus (da esquerda para a direita), transicionando de cor). */
 
 }
-.car h1{
+.card h1{
   color: rgb(13, 89, 124);/* define a cor do texto para um tom . */
   text-align: center; /* centraliza o texto do titulo. */
   font-size: 1.2rem;
@@ -33,14 +33,14 @@ body{
      transition:0.5s; 
 }
 .card:hover .img-box{
-  top: -100px;
+  top: -60px;
   scale:0.75; /* reduz a escala da imagem para 75% do seu tamanho original (fica levemente menor).*/
 }
 
 .card .img-box img{    
   width:100%; 
   height:100%;
-  object-fit:cover;/* garante que a imagem preencha todo o espaco disponivel sem ser esticada ou distorcida(
+  object-fit: cover;/* garante que a imagem preencha todo o espaco disponivel sem ser esticada ou distorcida(
   ela corta os excessos mantendo a proporcao original).*/
 }
 .card{
@@ -54,11 +54,11 @@ body{
     box-shadow:0px 35px 80px rgba(0,0,0.15);/* adiciona uma borda suave abaixo do card.*/
     transition:0.5s;
 }
-.card-hover{
+.card:hover{
   height:400px;/* define a nova altura.*/
 }
 
-.card.content{
+.card.card-content{
   display:flex;/* permitindo organizar e alinhar facilmente os elementos filhos dentro deste conteiner. */
   flex-direction:column;/*define a direcao dos elementos filhos empilhados em coluna(um debaixo do outro),
   em vez de lado a lado */
@@ -77,11 +77,11 @@ body{
   ex: se a altura expandir de 30px para outro valor no :hover).*/
 
 }
-.card:hover.card.content{
+.card:hover .card-content{
   top:130px;
   height:250px;
 }
-.card.read-more{
+.card .read-more{
   background: linear-gradient(90deg,#211b80,#211b80);
   padding:12px;
   color:#ffffff;
@@ -95,14 +95,14 @@ body{
   gap:4px; /*espaco entre o titulo eo preco*/
 }
 
-.plan-tittle{
-  color:hsl(224, 23% 55%);/*cor escura padrao de card */
+.plan-title{
+  color:hsl(224 23% 55%);/*cor escura padrao de card */
   font-size: 1rem;
 }
 
 .plan-price{
-  color:hsl(224, 23% 55%);/* cor cinza/suave para preco.*/
-  font-size:0.9rem;
+  color:hsl(224 23% 55%);/* cor cinza/suave para preco.*/
+  font-size: 0.9rem;
 }
 
 button{
