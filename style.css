@@ -27,14 +27,15 @@ body{
 }
 .card .img-box{
     position:absolute;
-    width:250px;
-     height:auto;
+    left: 0;
+    width:350px;
+     height:150px;
+     overflow: hidden;
      top:0px;  /* posiciona a caixa colada no topo do conteiner pai*/
      transition:0.5s; 
-}
-.card:hover .img-box{
-  top: -60px;
-  scale:0.75; /* reduz a escala da imagem para 75% do seu tamanho original (fica levemente menor).*/
+     z-index: 1; /*mantém a imagem em uma camada inferior*/
+     border-top-left-radius: 20px;
+     border-top-right-radius: 20px;
 }
 
 .card .img-box img{    
@@ -65,21 +66,25 @@ body{
   gap: 18px;/* define o espacamento constante entre cada elemento filho do container.*/
   position:absolute;/* remover o elemento do fluxo normal da pagina e o posiciona em relacao ao ancestral
   mais proximo que tenha.*/
-  top: 250px; /* empurra o elemento para baixo, a partir do topo do seu elemento pai de referencia. */
+  top: 150px; /* empurra o elemento para baixo, a partir do topo do seu elemento pai de referencia. */
   width:100%; /* faz o conteiner ocupar 100% da largura disponivel do seu elemento pai. */
   padding:0px 30px;/*define o espacamento interno do elemento. */
   text-align:center;/* centraliza todo o texto e elementos inline contidos dentro dessa caixa.*/
-  height:30px;/* trava a altura do container em exatamente(geralmente usado para esconder o conteudo restante
+  height:140px;/* trava a altura do container em exatamente(geralmente usado para esconder o conteudo restante
   quando combinado  a propriedade abaixo.*/
   overflow:hidden; /* esconde qualquer conteudo que ultrapasse o limite de alutra do conteiner(cort o que
   "vazar" */
   transition:0.5s;/* cria uma animacao suave de segundos quando alguma propriedade desse elemento mudar (
   ex: se a altura expandir de 30px para outro valor no :hover).*/
+  z-index: 2;
+}
 
+.card-content{
+  z-index: 2; /*garante que o conteúdo fique por cima da imagem*/
 }
 .card:hover .card-content{
-  top:130px;
-  height:250px;
+  top:150px;
+  height:230px;
 }
 .card .read-more{
   background: linear-gradient(90deg,#211b80,#211b80);
@@ -110,11 +115,11 @@ button{
   border-radius:50px; /* arredonda as pontas do botao ate criar o formato totalmente oval/pilula.*/
   cursor:pointer;  /*transforma o ponteiro do mause no icone " maozinha de clique" ao passar por cima do botao. */
   border:0;/* remove a borda padrao do navegador em volta do botao. */
-  background-color:blue;
+  background-color:rgba(164, 140, 184, 0.377);
   box-shadow:rgb(13, 89, 124) 0 0 8px;/* adiciona um leve brilho /sombra ao redor do botao usando a cor. */
   letter-spacing: 1.5px; /* adiciona um espaco entre cada letra do texto.*/
   text-transform:uppercase; /*converte todo o texto do botao para letras maiusculas. */
-  font-size:15px; /* define o tamanho da fonte. */
+  font-size:10px; /* define o tamanho da fonte. */
   transition: all 0.5s ease;
 }
 
@@ -122,7 +127,7 @@ button:hover{
  letter-spacing: 3px; /* aumenta o espaço entre as letras ( efeito de "expansao" do texto). */
  background-color:hsl(261deg 80% 48%);
  color:hsl(0,0%,100%); /* muda a cor do texto  para branco puro. */
- box-shadow: rgb(93 24 220) 0px 7px 29px 0px; /* cria uma sombra projetada para baixo com tom arroxeado,
+ box-shadow: rgb(128, 100, 184) 0px 7px 29px 0px; /* cria uma sombra projetada para baixo com tom arroxeado,
  dando um efeito de elevaçao no botao . */
 
 }
