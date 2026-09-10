@@ -11,19 +11,49 @@ body{
     justify-content:center;
     align-items:center; /*centraliza os elementos filhos verticalmente na tela. */
     min-height:100vh;  
-    background:linear-gradient(90deg,#211b80,#211b80,#ffff); /* cria um fundo com degrade na direcao
+    background:linear-gradient(90deg,#b3cdeb,#b9cedb,#ffff); /* cria um fundo com degrade na direcao
     de 90 graus (da esquerda para a direita), transicionando de cor). */
 
 }
+
+.plan-detail{
+  display: flex; /* Ativa o modo lado a lado */
+  justify-content: flex-start; /* Espalha os textos (um na esquerda, um na direita) */
+  align-items: center; /* Alinha os textos verticalmente no meio */
+  gap: 20px; /* Cria um espaço de 20px entre os textos para não grudarem */
+}
+
+.plan-title{
+  color:hsl(224 23% 55%);/*cor escura padrao de card */
+  font-size: 1rem;
+}
+
+.plan-price{
+  color:hsl(224 23% 55%);/* cor cinza/suave para preco.*/
+  font-size: 0.9rem;
+}
+
+.card-body{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
 .card h1{
-  color: rgb(13, 89, 124);/* define a cor do texto para um tom . */
+  color: rgb(13, 13, 14);/* define a cor do texto para um tom . */
   text-align: center; /* centraliza o texto do titulo. */
-  font-size: 1.2rem;
+  font-size: 30px;
+  font-family: sans-serif;
+  font-weight: 500;
+  margin-bottom:120px;
+
 }
 
 .card p{
-  color:#211b80;
-  font-size: 20px;/*define o tamanho da fonte dos parafrafos. */
+  color:#1b1b1b;
+  font-size: 14px;/*define o tamanho da fonte dos parafrafos. */
+  font-weight: 400;
+  margin: 0%;
 }
 .card .img-box{
     position:absolute;
@@ -48,12 +78,13 @@ body{
     display: flex;
     justify-content:center; /* centraliza os elementos filhos horizontalmente dentro do card. */
     width: 350px;
-    height: 300px;
+    height: 550px;
     position:relative; /* manteve o posicionamento padrao do elemento no fluxo da pagina*/
     background-color:#ffffff;/* define a cor de fundo do card */
     border-radius: 20px; /* e usada para arrendondar os cantos da borda de um elemento. */
     box-shadow:0px 35px 80px rgba(0,0,0.15);/* adiciona uma borda suave abaixo do card.*/
     transition:0.5s;
+    padding: 40px;
 }
 .card:hover{
   height:400px;/* define a nova altura.*/
@@ -61,30 +92,30 @@ body{
 
 .card.card-content{
   display:flex;/* permitindo organizar e alinhar facilmente os elementos filhos dentro deste conteiner. */
-  flex-direction:column;/*define a direcao dos elementos filhos empilhados em coluna(um debaixo do outro),
+  flex-direction:column-reverse;/*define a direcao dos elementos filhos empilhados em coluna(um debaixo do outro),
   em vez de lado a lado */
-  gap: 18px;/* define o espacamento constante entre cada elemento filho do container.*/
+  gap: 12px;/* define o espacamento constante entre cada elemento filho do container.*/
   position:absolute;/* remover o elemento do fluxo normal da pagina e o posiciona em relacao ao ancestral
   mais proximo que tenha.*/
-  top: 150px; /* empurra o elemento para baixo, a partir do topo do seu elemento pai de referencia. */
   width:100%; /* faz o conteiner ocupar 100% da largura disponivel do seu elemento pai. */
-  padding:0px 30px;/*define o espacamento interno do elemento. */
+  padding:30px 24px;/*define o espacamento interno do elemento. */
   text-align:center;/* centraliza todo o texto e elementos inline contidos dentro dessa caixa.*/
   height:140px;/* trava a altura do container em exatamente(geralmente usado para esconder o conteudo restante
   quando combinado  a propriedade abaixo.*/
   overflow:hidden; /* esconde qualquer conteudo que ultrapasse o limite de alutra do conteiner(cort o que
   "vazar" */
-  transition:0.5s;/* cria uma animacao suave de segundos quando alguma propriedade desse elemento mudar (
+  transition:0.5s ease;/* cria uma animacao suave de segundos quando alguma propriedade desse elemento mudar (
   ex: se a altura expandir de 30px para outro valor no :hover).*/
   z-index: 2;
+  justify-content:flex-end;
+  bottom: 0;
 }
 
 .card-content{
-  z-index: 2; /*garante que o conteúdo fique por cima da imagem*/
+  z-index: 1; /*garante que o conteúdo fique por cima da imagem*/
 }
 .card:hover .card-content{
-  top:150px;
-  height:230px;
+  height:250px;
 }
 .card .read-more{
   background: linear-gradient(90deg,#211b80,#211b80);
@@ -94,27 +125,11 @@ body{
   border-radius:8px;
 }
 
-.plan-detail{
-  display:flex;
-  flex-direction:column;/*colocar o preco abaixo do titulo*/
-  gap:4px; /*espaco entre o titulo eo preco*/
-}
-
-.plan-title{
-  color:hsl(224 23% 55%);/*cor escura padrao de card */
-  font-size: 1rem;
-}
-
-.plan-price{
-  color:hsl(224 23% 55%);/* cor cinza/suave para preco.*/
-  font-size: 0.9rem;
-}
-
 button{
-  padding:17px 40px;
-  border-radius:50px; /* arredonda as pontas do botao ate criar o formato totalmente oval/pilula.*/
+  padding:10px 20px;
+  border-radius:100px; /* arredonda as pontas do botao ate criar o formato totalmente oval/pilula.*/
   cursor:pointer;  /*transforma o ponteiro do mause no icone " maozinha de clique" ao passar por cima do botao. */
-  border:0;/* remove a borda padrao do navegador em volta do botao. */
+  border: 15;/* remove a borda padrao do navegador em volta do botao. */
   background-color:rgba(164, 140, 184, 0.377);
   box-shadow:rgb(13, 89, 124) 0 0 8px;/* adiciona um leve brilho /sombra ao redor do botao usando a cor. */
   letter-spacing: 1.5px; /* adiciona um espaco entre cada letra do texto.*/
@@ -144,3 +159,5 @@ button:active{
    ao toque. */
 
 }
+
+
