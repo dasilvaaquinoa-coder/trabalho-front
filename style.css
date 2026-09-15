@@ -11,17 +11,41 @@ body{
     justify-content:center;
     align-items:center; /*centraliza os elementos filhos verticalmente na tela. */
     min-height:100vh;  
-    background:linear-gradient(90deg,#b3cdeb,#b9cedb,#ffff); /* cria um fundo com degrade na direcao
+    background:linear-gradient(90deg,#b3cdeb,#bacfe0,#c7e3eb); /* cria um fundo com degrade na direcao
     de 90 graus (da esquerda para a direita), transicionando de cor). */
+   
+}
+
+.plan-details{
+ text-align: left;
+ display: flex;
+ flex-direction: column;
+ font-family: Arial, Helvetica, sans-serif;
+}
+.plan-details h2{
+  color: #1b1b1b;
+  font-size: 0.95rem;
+  font-weight: 900;
+  margin: 0%;
+}
+.plan-details p {
+  color:#1b1b1b;
+  font-size: 0.85rem;
+  margin-top: 3px 0 0 0;
 
 }
 
-.plan-detail{
-  display: flex; /* Ativa o modo lado a lado */
-  justify-content: flex-start; /* Espalha os textos (um na esquerda, um na direita) */
-  align-items: center; /* Alinha os textos verticalmente no meio */
-  gap: 20px; /* Cria um espaço de 20px entre os textos para não grudarem */
+.change-btn{
+  font-size:0.9rem;
+  font-weight:700;
+  text-decoration:underline;
 }
+.change-btn:hover{
+  text-decoration:none;
+  color:#211b80;
+
+}
+
 
 .plan-title{
   color:hsl(224 23% 55%);/*cor escura padrao de card */
@@ -32,28 +56,38 @@ body{
   color:hsl(224 23% 55%);/* cor cinza/suave para preco.*/
   font-size: 0.9rem;
 }
+.plan-box{
+ align-content:space-between;
+background-color:#ffffffec;
+padding: 0px 15px;
+border-radius: 10px;
+width:100%; 
+height: auto;
+align-items:center;    /* Alinha os itens verticalmente ao centro */
+margin: 0.9px 0;
+box-sizing: border-box;
+display: flex;
+gap: 100px;
+margin-bottom: 30px;
+}
 
 .card-body{
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.card h1{
-  color: rgb(13, 13, 14);/* define a cor do texto para um tom . */
-  text-align: center; /* centraliza o texto do titulo. */
-  font-size: 30px;
-  font-family: sans-serif;
-  font-weight: 500;
-  margin-bottom:120px;
-
-}
-
-.card p{
   color:#1b1b1b;
-  font-size: 14px;/*define o tamanho da fonte dos parafrafos. */
-  font-weight: 400;
-  margin: 0%;
+  font-size:0.95rem;
+  line-height:1.5;
+}
+.card-content{
+  padding: 30px;
+  text-align: center;
+}
+
+.card-content h1{
+  color: #1b1b1b;
+  text-align: auto;
+  font-size: 1.5rem;
+  font-weight: 900;
+  margin-bottom: 110px;
+  gap:60px;
 }
 .card .img-box{
     position:absolute;
@@ -63,14 +97,14 @@ body{
      overflow: hidden;
      top:0px;  /* posiciona a caixa colada no topo do conteiner pai*/
      transition:0.5s; 
-     z-index: 1; /*mantém a imagem em uma camada inferior*/
+     z-index: 2; /*mantém a imagem em uma camada inferior*/
      border-top-left-radius: 20px;
      border-top-right-radius: 20px;
 }
 
 .card .img-box img{    
   width:100%; 
-  height:100%;
+  height: 100%;
   object-fit: cover;/* garante que a imagem preencha todo o espaco disponivel sem ser esticada ou distorcida(
   ela corta os excessos mantendo a proporcao original).*/
 }
@@ -86,9 +120,7 @@ body{
     transition:0.5s;
     padding: 40px;
 }
-.card:hover{
-  height:400px;/* define a nova altura.*/
-}
+
 
 .card.card-content{
   display:flex;/* permitindo organizar e alinhar facilmente os elementos filhos dentro deste conteiner. */
@@ -111,12 +143,7 @@ body{
   bottom: 0;
 }
 
-.card-content{
-  z-index: 1; /*garante que o conteúdo fique por cima da imagem*/
-}
-.card:hover .card-content{
-  height:250px;
-}
+
 .card .read-more{
   background: linear-gradient(90deg,#211b80,#211b80);
   padding:12px;
@@ -126,38 +153,37 @@ body{
 }
 
 button{
-  padding:10px 20px;
+  padding:9px 60px;
   border-radius:100px; /* arredonda as pontas do botao ate criar o formato totalmente oval/pilula.*/
   cursor:pointer;  /*transforma o ponteiro do mause no icone " maozinha de clique" ao passar por cima do botao. */
   border: 15;/* remove a borda padrao do navegador em volta do botao. */
-  background-color:rgba(164, 140, 184, 0.377);
-  box-shadow:rgb(13, 89, 124) 0 0 8px;/* adiciona um leve brilho /sombra ao redor do botao usando a cor. */
+  background-color:rgba(140, 141, 212, 0.774);
+  box-shadow:rgb(68, 152, 190) 0 0 8px;/* adiciona um leve brilho /sombra ao redor do botao usando a cor. */
   letter-spacing: 1.5px; /* adiciona um espaco entre cada letra do texto.*/
   text-transform:uppercase; /*converte todo o texto do botao para letras maiusculas. */
   font-size:10px; /* define o tamanho da fonte. */
   transition: all 0.5s ease;
+  margin-bottom: 10px;
 }
 
 button:hover{
  letter-spacing: 3px; /* aumenta o espaço entre as letras ( efeito de "expansao" do texto). */
- background-color:hsl(261deg 80% 48%);
+ background-color:hsl(224deg 23% 55%);
  color:hsl(0,0%,100%); /* muda a cor do texto  para branco puro. */
- box-shadow: rgb(128, 100, 184) 0px 7px 29px 0px; /* cria uma sombra projetada para baixo com tom arroxeado,
+ box-shadow: rgb(58, 162, 223) 0px 7px 29px 0px; /* cria uma sombra projetada para baixo com tom arroxeado,
  dando um efeito de elevaçao no botao . */
-
 }
 
 button:active{
    letter-spacing: 3px;
-   background-color:hsl(261deg 80% 48%);
+   background-color:hsl(224deg 23% 55%);
    color:hsl(0,0%,100%);
-   box-shadow:rgb(93 24 220) 0px 0px 0px 0px; /* remove totalmente a sombra, dando a impressao de que
+   box-shadow:rgb(126, 169, 224) 0px 0px 0px 0px; /* remove totalmente a sombra, dando a impressao de que
    o botao "desceu" em direçao a tela. */
    transform: translateY(10px);/*  empurra o botao 10px para baixo na tela, simulaçao fisica de botao sendo
     afundado/ pressionando.*/
    transition:100ms;/* aplica essa animaçao de clique em um ritmo ultra rapido para dar resposta imediata
    ao toque. */
-
 }
 
 
