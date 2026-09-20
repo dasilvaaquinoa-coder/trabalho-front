@@ -23,4 +23,4 @@ Nesta parte do css foi colocada essa tag para fazer a estilzação de toda a par
 
 E foi para parte das informaçoes que são colocada  layout no corpo do texto , mechendo no alinhamento  usando "align-items", o display "flex" para colocar o plano anual e o preço e o icone de musica  um do lado do outro  para ficar mais uniforme dentro do card e tambem foi criado um espaço entre cada item filho dentro do card usando o gap, ja na  cor  foi usado para destacar essa parte no card foi utilizado color "hsl" no titulo  e um fonte padrão de texto. Na parte " plan-box" , usei a tag background-color para colocar uma leve cor azulada com um pouco de transparencia no fundo , o justify-content , para empurrar as informações para o lado ,  usando tag para fazer o espaçamento interno do texto , e tambem foi utilizado o border-radius para fazer o arredondamento dos cantos da caixa do card e o width  para que o conteudo ocupe todo o espaço disponivel do conteiner pai e um margin- bottom para afastar o conteudo do meio do card do botão principal. 
 
-ja na estrutura do card 
+ja na estrutura do card foi utilizado na estilização 
