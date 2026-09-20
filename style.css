@@ -30,16 +30,16 @@ body{
   font-family: Arial, Helvetica, sans-serif;
   color:#1b1b1b;
   font-size: 0.85rem;
-  margin-top: 3px 0 0 0;
+  margin-top: 3px;
 
 }
 .plan-price{
   color:#c7e3eb;
-  font: size 0.85rem;;
+  font-size:0.85rem;
 }
 
 .change-btn{
-  font-size:0.9;
+  font-size:0.9rem;
   font-weight:400;
   text-decoration:underline;
 }
@@ -154,9 +154,9 @@ button{
   padding:10px 60px;
   border-radius:9px; /* arredonda as pontas do botao ate criar o formato totalmente oval/pilula.*/
   cursor:pointer;  /*transforma o ponteiro do mause no icone " maozinha de clique" ao passar por cima do botao. */
-  border: 15;/* remove a borda padrao do navegador em volta do botao. */
+  border: 15px solid transparent;/* remove a borda padrao do navegador em volta do botao. */
   background-color:#4638df;
-  box-shadow:#3829e0;/* adiciona um leve brilho /sombra ao redor do botao usando a cor. */
+  box-shadow:0px 4px 10x #3829e0;/* adiciona um leve brilho /sombra ao redor do botao usando a cor. */
   letter-spacing: 1.5px; /* adiciona um espaco entre cada letra do texto.*/
   text-transform:uppercase; /*converte todo o texto do botao para letras maiusculas. */
   font-size:10px; /* define o tamanho da fonte. */
@@ -169,7 +169,7 @@ button:hover{
  letter-spacing: 3px; /* aumenta o espaço entre as letras ( efeito de "expansao" do texto). */
  background-color:#766cf1; 
  color:#3829e0; /* muda a cor do texto  para branco puro. */
- box-shadow:#3829e0; /* cria uma sombra projetada para baixo com tom arroxeado,
+ box-shadow: #3829e0; /* cria uma sombra projetada para baixo com tom arroxeado,
  dando um efeito de elevaçao no botao . */
 }
 
