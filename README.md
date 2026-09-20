@@ -29,4 +29,4 @@ Na tag "card" foi utilizado tag para o empilhamento dos filhos verticalmete , e 
 
 Nas imagem que foi utilizada na parte de cima do card fazendo que ela não utrapassace o limite do card não estorace , para fazer o ajuste tanto na altura como na largura da imagem e fazendo com que a imagem ocupace 100% da altura e largura da caixa pai , e tambem fazendo o arredondamento das borda da imagem para igualar com a bordas estabelecida da caixa do card , e fazendo com que preencha sem fazer a distorção da imagem cortando o excesso.(width , height , object- fit , boder-top-left-radius , border-top-right-radius).
 
-E umas alteraçao que fiz e acrecentando no css 
+E umas alteração que fiz e acrecentando no css como as tag " .card.card-content e card.read-more" 
