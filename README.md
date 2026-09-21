@@ -1,10 +1,11 @@
              
-»««««««««««««»»»»»»»»»»»»»»»»»»»»    Desafio Card «««««««««««««««««««««««««««««««««««««««««««««««««
+»««««««««««««»»»»»»»»»»»»  Desafio Card ««««««««««««««««««««««««««
+Criar um card de resumo de pedido contendo resposividade e focado no disgn no css.
 
-»»»»»»»»»»»»»  descrição do que foi feito a montagem do card «««««««««««««««
+»»»»»»»»»»»»» descrição do que foi feito a montagem do card «««««««
 
 
-»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»       Html       «««««««««««««««««««««««««««««««««««««««««««««««««
+»»»»»»»»»»»»»»»»»»»»»       Html ««««««««««««««««««««««««««««««««««««««
 
 Para começar a construção do card comecei com html  colocando o ! DOCTYPE html declarando o tipo de documento no inicio , depois colocando a "tag lang" para colocar o idioma que vai ser exibido no card, antes de começar o corpo linkar o arquivo do css para aparecer as modificaçoes no card usando a 
 "tag link" dentro do " head".
@@ -13,7 +14,7 @@ Em seguida foi posto o "div class card-content" para estruturar o texto que vai 
 Terminado a parte do conteudo , foi para montagem do botões de acesso como o change , e os principais do card onde foi utilizado a tag "button" para motar a estrutura do botão que vai ser motado e estilizado no css. 
 
 
-»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»     CSS     ««««««««««««««««««««««««««««««««««««««««««««««««««««
+»»»»»»»»»»»»»»»»»»»»»»»»»»»»     CSS «««««««««««««««««««««««««
 
 O css e utilizado para fazer toda a estilizaçao da estrutura do site deixando mais bonito e funcinal para o usuario , no css foi utilizado no começo as tags" margin , padding , box-sizing" para tratar as magens do card garantindo que todo o conteudo não passe dos lados fique certinho dentro do card.
 
@@ -29,4 +30,6 @@ Na tag "card" foi utilizado tag para o empilhamento dos filhos verticalmete , e 
 
 Nas imagem que foi utilizada na parte de cima do card fazendo que ela não utrapassace o limite do card não estorace , para fazer o ajuste tanto na altura como na largura da imagem e fazendo com que a imagem ocupace 100% da altura e largura da caixa pai , e tambem fazendo o arredondamento das borda da imagem para igualar com a bordas estabelecida da caixa do card , e fazendo com que preencha sem fazer a distorção da imagem cortando o excesso.(width , height , object- fit , boder-top-left-radius , border-top-right-radius).
 
-E umas alteração que fiz e acrecentando no css como as tag " .card.card-content e card.read-more" 
+Nesta parte foi feio para deixar o conteiner  flutuante na parte inferir  do card e alterações na parte dos botões para fixar no rodapé do cartão pai alinhando os cantos no limite da caixa, mechendo na largura e na cor também , como a cor do fundo azul- escuro no botão usando a sintaxe de gradiente , uniformisando as cores usadas, e usei a tag "padding" na parte do espaçamento interno em todas as direções paea expandir a área clique no formato ao botão.(.card.read-more, .card.card-content).
+
+E para finalizar foi estilizados os botões "Proceed to Paymen" e "Cancel Order" montado a estrutura e responsividade , primeiro comecei montando a estrutura usando  a tag button no css estilzando o espaçamento , fazendo o arredondamento dos cantos deixando com aspecto mais bonito e tambem colocando o efeito da mãozinha ao passar por cima do botão quando o usuario mecher o mause com "cursor:pointer"
