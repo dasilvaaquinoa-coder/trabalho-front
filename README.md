@@ -1,8 +1,10 @@
              
 »««««««««««««»»»»»»»»»»»»  Desafio Card ««««««««««««««««««««««««««
-Criar um card de resumo de pedido contendo resposividade e focado no disgn no css.
 
-»»»»»»»»»»»»» descrição do que foi feito a montagem do card «««««««
+
+             Criar um card de resumo de pedido contendo resposividade e focado no disgn no css.
+
+»»»»»»»»»»»»»             descrição do que foi feito a montagem do card       «««««««
 
 
 »»»»»»»»»»»»»»»»»»»»»       Html ««««««««««««««««««««««««««««««««««««««

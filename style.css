@@ -11,7 +11,7 @@ body{
     justify-content:center;
     align-items:center; /*centraliza os elementos filhos verticalmente na tela. */
     min-height:90vh;  
-    background:hsl(224 50% 80%); /* cria um fundo com degrade na direcao
+    background:hsl(225 100% 95%); /* cria um fundo com degrade na direcao
     de 90 graus (da esquerda para a direita), transicionando de cor). */
     font-family: Arial, Helvetica, sans-serif;
     background-image:url("images/pattern-background-desktop.svg");
@@ -25,15 +25,15 @@ body{
  
 }
 .plan-details h2{
-  color: #1b1b1b;
-  font-size: 0.85rem;
+  color: hsl(223 47% 23%);
+  font-size: 16px;
   font-weight: 900;
 
 }
 .plan-details p {
   font-family: Arial, Helvetica, sans-serif;
   color:#1b1b1b;
-  font-size: 0.85rem;
+  font-size: 16px;
   margin-top: 3px;
 
 }
@@ -43,13 +43,14 @@ body{
 }
 
 .change-btn{
+  color:hsl(245, 75%, 62%);
   font-size:0.9rem;
   font-weight:400;
   text-decoration:underline;
 }
 .change-btn:hover{
   text-decoration:none;
-  color:#211b80;
+  color:hsl(245 75% 62%);
 
 }
 .plan-info{
@@ -60,7 +61,7 @@ body{
 
 
 .plan-title{
-  color:hsl(224 23% 55%);/*cor escura padrao de card */
+  color:hsl(223 47% 23%);/*cor escura padrao de card */
   font-size: 1rem;
 }
 
@@ -70,7 +71,7 @@ body{
   margin-top: 3px;
 }
 .plan-box{
-background-color:#f1f6faec;
+background-color:hsl(225 , 100%,  98%);
 justify-content: space-between;
 padding: 14px 16px;
 border-radius: 12px;
@@ -81,7 +82,7 @@ margin-bottom: 14px;
 }
 
 .card-body{
-  color:#1b1b1b;
+  color:hsl(224, 23% , 55%);
   font-size:0.85rem;
   line-height:1.4;
   margin-bottom: 20px;
@@ -94,30 +95,31 @@ margin-bottom: 14px;
   align-items: center;
 }
 .card-content h1{
-  color: #130947;
-  font-size: 1.3rem;
+  color:hsl(223 ,47% , 23%);
+  font-size: 1.35rem;
   font-weight: 900;
   margin-bottom: 1px;
 }
 .card.img-box{
      width:100px;
-     height:100px;
+     height:auto;
      
 } 
 
 .card.img-box img{    
   width:100%; 
-  height: 100%;
+  height: auto;
   object-fit: cover;/* garante que a imagem preencha todo o espaco disponivel sem ser esticada ou distorcida(
   ela corta os excessos mantendo a proporcao original).*/
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
+  display: block;
 }
 .card{
     display: flex;
     flex-direction: column;
     width: 350px;
-    height:550px;
+    min-height: 550px;
     background-color:#ffffff;/* define a cor de fundo do card */
     border-radius: 20px; /* e usada para arrendondar os cantos da borda de um elemento. */
     box-shadow:0px 20px 40px rgba(0,0,0.15);/* adiciona uma borda suave abaixo do card.*/
@@ -132,7 +134,7 @@ margin-bottom: 14px;
   em vez de lado a lado */
   align-items: center;
   left: 0;
-  position:absolute;/* remover o elemento do fluxo normal da pagina e o posiciona em relacao ao ancestral
+  position:flexbox;/* remover o elemento do fluxo normal da pagina e o posiciona em relacao ao ancestral
   mais proximo que tenha.*/
   width:100%; /* faz o conteiner ocupar 100% da largura disponivel do seu elemento pai. */
   padding:25px 24px;/*define o espacamento interno do elemento. */
@@ -159,21 +161,21 @@ button{
   border-radius:9px; /* arredonda as pontas do botao ate criar o formato totalmente oval/pilula.*/
   cursor:pointer;  /*transforma o ponteiro do mause no icone " maozinha de clique" ao passar por cima do botao. */
   border: 10px solid transparent;/* remove a borda padrao do navegador em volta do botao. */
-  background-color:#4638df;
+  background-color:hsl(245 ,75% , 52%);
   box-shadow:0px 4px 10px rgba(56,41,0.15);/* adiciona um leve brilho /sombra ao redor do botao usando a cor. */
   letter-spacing: 1.5px; /* adiciona um espaco entre cada letra do texto.*/
   text-transform:uppercase; /*converte todo o texto do botao para letras maiusculas. */
-  font-size:10px; /* define o tamanho da fonte. */
-  transition:  all 0.5s background;
+  font-size:11px; /* define o tamanho da fonte. */
+  transition:  all 0.4s background;
   margin-bottom: 10px;
  
 }
 
 button:hover{
  letter-spacing: 2px; /* aumenta o espaço entre as letras ( efeito de "expansao" do texto). */
- background-color:#766cf1; 
- color:#3829e0; /* muda a cor do texto  para branco puro. */
- box-shadow: #a7a2e0; /* cria uma sombra projetada para baixo com tom arroxeado,
+ background-color:hsl(245 , 75% , 52%); 
+ color:#ffffff; /* muda a cor do texto  para branco puro. */
+ box-shadow: #827db3; /* cria uma sombra projetada para baixo com tom arroxeado,
  dando um efeito de elevaçao no botao . */
 }
 
