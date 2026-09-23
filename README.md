@@ -1,22 +1,24 @@
              
-»««««««««««««»»»»»»»»»»»»  Desafio Card ««««««««««««««««««««««««««
+»««««««««««««»»»»»»»»»»»»               DESAFIO FRONT END            ««««««««««««««««««««««««««
 
 
-             Criar um card de resumo de pedido contendo resposividade e focado no disgn no css.
+           Criar um card de resumo de pedido contendo resposividade e focado no disgn no css.
 
-»»»»»»»»»»»»»             descrição do que foi feito a montagem do card       «««««««
+»»»»»»»»»»»»»           Descrição do que foi feito a montagem do card       «««««««
 
+ 
+»»»»»»»»»»»»»»»»»»»»»                     Html                      ««««««««««««««««««««««««
 
-»»»»»»»»»»»»»»»»»»»»»       Html ««««««««««««««««««««««««««««««««««««««
+Para começar a construção do card foi colocado  no html  a " ! DOCTYPE html " declarando o tipo de documento no inicio , depois colocando a "tag lang" para colocar o idioma que vai ser exibido no card, antes de começar o corpo linkar o arquivo do css para aparecer as modificaçoes no card usando a "tag link" dentro do " head".
 
-Para começar a construção do card comecei com html  colocando o ! DOCTYPE html declarando o tipo de documento no inicio , depois colocando a "tag lang" para colocar o idioma que vai ser exibido no card, antes de começar o corpo linkar o arquivo do css para aparecer as modificaçoes no card usando a 
-"tag link" dentro do " head".
-Depois coloca a "tag tittler" para colocar um o titulo no card , e colocado a " tag body " que e o corpo do html coloquei um "main class " declarando a classe que ia ser colocada no corpo do card , em seguida foi posto o " div class" que declara a classe da iamgem que vai ficar no top do box , usando a o "img" para linkar a imagem e a pasta onde esta localizada.
-Em seguida foi posto o "div class card-content" para estruturar o texto que vai ser posto no card , dentro desta tag foi colocado  o " H1" para se montado o cabeçalho do conteudo defindo a hierarquia semantica sendo o titulo principal do texto, em baixo foi posto a tag"p"  para motar o paragrafo onde vai ser descrito todo o conteudo do texto , depois foi aberto outra classe de css para ser estilizado a parte do preço , dentro desta classe foi colocado o a "h2" e " p" , e um segundo titulo que utilizado na parte principal do conteudo do texto  contedo a imagem ilustrativa de incone de musica onde se localiza a parte do plano anual e o reço do produto.
+Depois coloca a "tag tittler" para colocar um o titulo no card , e colocado a " tag body " que e o corpo do html coloquei um "main class " declarando a classe que ia ser colocada no corpo do card, em seguida foi posto o " div class" que declara a classe da iamgem que vai ficar no top do box, usando a o "img" para linkar a imagem e a pasta onde esta localizada.
+
+Em seguida foi posto o "div class card-content" para estruturar o texto que vai ser posto no card , dentro desta tag foi colocado  o " H1" para se montado o cabeçalho do conteudo defindo a hierarquia semantica sendo o titulo principal do texto, em baixo foi posto a tag"p"  para motar o paragrafo onde vai ser descrito todo o conteudo do texto , depois foi aberto outra classe de css para ser estilizado a parte do preço, dentro desta classe foi colocado o a "h2" e " p" , e um segundo titulo que utilizado na parte principal do conteudo do texto  contedo a imagem ilustrativa de incone de musica onde se localiza a parte do plano anual e o reço do produto.
+
 Terminado a parte do conteudo , foi para montagem do botões de acesso como o change , e os principais do card onde foi utilizado a tag "button" para motar a estrutura do botão que vai ser motado e estilizado no css. 
 
 
-»»»»»»»»»»»»»»»»»»»»»»»»»»»»     CSS «««««««««««««««««««««««««
+»»»»»»»»»»»»»»»»»»»»»»»»»»»»                  CSS                 «««««««««««««««««««««««««
 
 O css e utilizado para fazer toda a estilizaçao da estrutura do site deixando mais bonito e funcinal para o usuario , no css foi utilizado no começo as tags" margin , padding , box-sizing" para tratar as magens do card garantindo que todo o conteudo não passe dos lados fique certinho dentro do card.
 
@@ -34,4 +36,8 @@ Nas imagem que foi utilizada na parte de cima do card fazendo que ela não utrap
 
 Nesta parte foi feio para deixar o conteiner  flutuante na parte inferir  do card e alterações na parte dos botões para fixar no rodapé do cartão pai alinhando os cantos no limite da caixa, mechendo na largura e na cor também , como a cor do fundo azul- escuro no botão usando a sintaxe de gradiente , uniformisando as cores usadas, e usei a tag "padding" na parte do espaçamento interno em todas as direções paea expandir a área clique no formato ao botão.(.card.read-more, .card.card-content).
 
-E para finalizar foi estilizados os botões "Proceed to Paymen" e "Cancel Order" montado a estrutura e responsividade , primeiro comecei montando a estrutura usando  a tag button no css estilzando o espaçamento , fazendo o arredondamento dos cantos deixando com aspecto mais bonito e tambem colocando o efeito da mãozinha ao passar por cima do botão quando o usuario mecher o mause com "cursor:pointer"
+E para finalizar foi estilizados os botões "Proceed to Paymen" e "Cancel Order" montado a estrutura e hover , primeiro comecei montando a estrutura usando  a tag button no css estilzando o espaçamento , fazendo o arredondamento dos cantos deixando com aspecto mais bonito e tambem colocando o efeito da mãozinha ao passar por cima do botão quando o usuario mecher o mause com "cursor:pointer", e dando uma cor para o botão.
+
+Ja na interatividade , quando o usuario passar o mause vai gerar um feedback visual imediato, clariando a cor em cima do botão quando passa de um para o outro.(button:hover).
+
+ja no "buttton:active" foi feito o efeito fisico de clique , simulando o afundamento de botão real no momento exato do clique foi usado a tag "box-shadow" quando o usuario clicar no botão  e retirado a sombra projeta fazendo a simulação que o botão encostou na superficie do card e por fim foi usada uma "transiton" para fazer encurtamento de tempo da animação garantindo uma resposta instantânea ao clique do usuario.
