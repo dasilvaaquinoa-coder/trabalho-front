@@ -1,5 +1,5 @@
              
-»««««««««««««»»»»»»»»»»»»               DESAFIO FRONT END            ««««««««««««««««««««««««««
+»««««««««««««»»»»»»»»»»»»                            DESAFIO FRONT END            ««««««««««««««««««««««««««
 
 
            Criar um card de resumo de pedido focado no design no css.
@@ -7,7 +7,7 @@
 »»»»»»»»»»»»»           Descrição do que foi feito a montagem do card       «««««««
 
  
-»»»»»»»»»»»»»»»»»»»»»                     Html                      ««««««««««««««««««««««««
+»»»»»»»»»»»»»»»»»»»»»                                      Html                           ««««««««««««««««««««««««
 
 Para começar a construção do card foi colocado  no html  a " ! DOCTYPE html " declarando o tipo de documento no inicio , depois colocando a "tag lang" para colocar o idioma que vai ser exibido no card, antes de começar o corpo linkar o arquivo do css para aparecer as modificaçoes no card usando a "tag link" dentro do " head".
 
@@ -18,7 +18,7 @@ Em seguida foi posto o "div class card-content" para estruturar o texto que vai 
 Terminado a parte do conteudo , foi para montagem do botões de acesso como o change , e os principais do card onde foi utilizado a tag "button" para motar a estrutura do botão que vai ser motado e estilizado no css. 
 
 
-»»»»»»»»»»»»»»»»»»»»»»»»»»»»                  CSS                 «««««««««««««««««««««««««
+»»»»»»»»»»»»»»»»»»»»»»»»»»»»                               CSS                           «««««««««««««««««««««««««
 
 O css e utilizado para fazer toda a estilizaçao da estrutura do site deixando mais bonito e funcinal para o usuario , no css foi utilizado no começo as tags" margin , padding , box-sizing" para tratar as magens do card garantindo que todo o conteudo não passe dos lados fique certinho dentro do card.
 
