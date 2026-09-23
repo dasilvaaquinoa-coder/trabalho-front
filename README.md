@@ -2,7 +2,7 @@
 »««««««««««««»»»»»»»»»»»»               DESAFIO FRONT END            ««««««««««««««««««««««««««
 
 
-           Criar um card de resumo de pedido contendo resposividade e focado no disgn no css.
+           Criar um card de resumo de pedido focado no disgn no css.
 
 »»»»»»»»»»»»»           Descrição do que foi feito a montagem do card       «««««««
 
